@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MellowWoods</title>
+        <link rel="icon" type="image/png" href="https://d30y9cdsu7xlg0.cloudfront.net/png/46925-200.png"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Pinyon+Script" rel="stylesheet">
+        <style>
+            h1 {
+                color: black;
+                font-size: 50px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:20px;
+                font-family:"Helvetica";
+            }
+            #banner {
+                display:block;
+                margin:auto;
+                padding-top:25px;
+                height:60%;
+            }
+            .topnav{
+                background-color:#ffffff;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align:center;
+            }
+            .topnav a{
+                color:#000000;
+                text-align: center;
+                padding:5px 5px 5px 5px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Helvetica";
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #Description {
+                margin-left: 65px;
+                margin-right: 65px;
+                text-align: center;
+            }
+            #PricingPic img {
+                margin-left:100px;
+                float:left;
+                padding-right:40px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:30px;
+            }
+            .highlight {
+                background-color:#D3D3D3;
+                color: black;
+                font-style: italic;
+            }
+            hr{
+                margin-top:-15px;
+                margin-right: 50px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+            }
+            #footer-contact {
+                text-align:center;
+            }
+            .Index-portfolio-wrapper {
+                text-align: center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:580px;
+                height:400px;
+            }
+            #socialmedia {
+                text-align:center !important;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:40px;
+                height:40px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:45px;
+                height:40px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:40px;
+                height:40px;
+            }
+            #back-to-top {
+                text-align:center;
+                margin-top:20px;
+            }
+            .container{
+                display:block;
+            }
+            .top-arrow {
+                animation-name: beatArrow;
+                animation: beatArrow .5s infinite;
+                animation-direction: alternate;
+            }
+            @keyframes beatArrow {
+                from {
+                    transform:scale(1);
+                }
+                to {
+                    transform: scale(1.2);
+                }
+            }
+            .same-line {
+                display:inline-block;
+            }
+        @media screen and (min-width: 1120px) and (max-width: 1600px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 25px;
+                margin-right: 25px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:40px;
+                float:left;
+                display:inline-block;
+                margin-left:50px;
+                width:35%;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:20px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:10px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:450px;
+                height:300px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 900px) and (max-width: 1120px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 25px;
+                margin-right: 25px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:10px;
+                float:left;
+                display:inline-block;
+                margin-left:50px;
+                width:45%;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:20px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:0px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:360px;
+                height:250px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 780px) and (max-width: 900px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:10px;
+                float:left;
+                display:inline-block;
+                margin-left:0px;
+                width:400px;
+                height:500px;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:0px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:250px;
+                height:150px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 480px) and (max-width: 780px) {
+            h1 {
+                text-align:center !important;
+                font-size:45px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:15px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:430px;
+                height:350px;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                display:block;
+                margin: 0 auto;
+                padding-right:0px;
+                float:none;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:30px;
+                margin-left:30px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:155px;
+                height:110px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+                        #fa-facebook img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:25px;
+                height:20px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            h1 {
+                text-align:center !important;
+                font-size:40px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:15px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:90%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                width:80%;
+                height:80%;
+                margin: 0 auto;
+                text-align:center;
+                padding-right:0px;
+                float:none;
+                display:block;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:100px;
+                height:80px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+                        #fa-facebook img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:25px;
+                height:20px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            h1 {
+                text-align:center !important;
+                font-size:35px;
+            }
+            h2 {
+                color: black;
+                font-size: 25px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 18px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:10px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:300px;
+                height:150px;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+                margin: 0 auto;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                width:320px;
+                height:300px;
+                margin-left:0px;
+                display: block;
+                margin: 0 auto;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:100px;
+                height:80px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:15px;
+                height:15px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:20px;
+                height:15px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:15px;
+                height:15px;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+    <header>
+        <div class="header-a">
+            <h1>M W</h1>
+        </div>
+    </header>
+        <img id="banner" src="https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=750&q=80" alt="Banner Image"/>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                 <a href="#Home-Link">Home</a>
+                 <a href="#Pricing-Link">Pricing</a>
+                 <a href="#Portfolio-Link">Portfolio</a>
+                 <a href="#footer-contact">Contact</a>
+            </div>
+        </nav>
+    <section>
+        <div id="Home-Link">
+            <h2><em>Bespoke</em> Stationery for Wedding and Events</h2>
+                <p id="Description">Mellow Woods is a full-service company offering everything from custom wedding stationery + calligraphy to  watercolor artwork to hand lettered signage to branding. We pride ourselves in providing gorgeous, one-of-a-kind paper goods and artwork, as well as an exceptional customer experience from the time you reach out to us to when we hand over your completed goods. We would love to help bring your vision for your wedding, event or brand to life, and to help create something that you will never forget and want to cherish forever. Please feel free to get in touch so we can discuss your project further!</p>
+        </div>
+    </section>
+    <section>
+        <div id="Pricing-Link">
+            <h2>Pricing</h2> 
+            <div id="PricingPic">
+                <img src="https://images.unsplash.com/photo-1513321383621-cbadb449670f?auto=format&fit=crop&w=1554&q=80" alt="wedding card" width="450" height="500" >
+                    <div id="PriceList">
+                        <h3>Invitations</h3>
+                        <hr>
+                            <p><em>Pricing below includes custom design as well as printing.</em></p>
+
+                            <p style="padding-top:20px"><strong>1 color Flat Printing</strong></p>
+                            <p>100 Sets including Invitation & Envelope + Response card & Envelope: $950.<br/> Additional sets of 25: <span class="highlight">$30</span>.</p>
+
+                            <p><strong>1 Color Letterpress or Foil Printing</strong></p>
+                            <p>100 Sets including Invitation & Envelope + Response card & Envelope: $1,500.<br/> Additional sets of 25: <span class="highlight">$65</span>.</p>
+
+                            <p><strong>2 Color Letterpress Printing</strong></p>
+                            <p>100 Sets including Invitation & Envelope + Response card & Envelope: $1,900.<br/> Additional sets of 25: <span class="highlight">$85</span>.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="Portfolio-Link">
+            <h2>Portfolio</h2>
+                <p id="HeaderforGallery">We provide services on semi-custom invitation suite, greeting cards and finishing touches.</p>
+        <div class="Index-portfolio-wrapper">
+            <div class="Index-portfolio-items">
+                <img src="https://images.unsplash.com/photo-1494426383302-7b9d36a1a028?auto=format&fit=crop&w=750&q=80" alt="Envelope">
+                <img src="https://images.unsplash.com/photo-1464699973457-9a0cf44343d0?auto=format&fit=crop&w=751&q=80" alt="Cards2">
+                <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=750&q=80" alt="Sign">
+                <img src="https://images.unsplash.com/photo-1505433922285-c74dc4914347?auto=format&fit=crop&w=750&q=80" alt="Cutlery">
+                <img src="https://images.unsplash.com/photo-1505366055494-2268a382e017?auto=format&fit=crop&w=751&q=80" alt="Cutlery2">
+                <img src="https://images.unsplash.com/photo-1509316554658-04f9287cdb78?auto=format&fit=crop&w=750&q=80" alt="InvitationCard">
+            </div>
+        </div>
+    </section>
+        <footer>
+            <div id="Contact-Link">
+                <h2>Contact Me</h2>
+                    <p id="footer-contact">You can reach me at abc@gmail.com if you have any inquiries <br/> Or, you can know more about me at:</p>
+                <div id="socialmedia"  >
+                    <div id="fa-facebook" class="same-line">
+                        <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook-logo"></a>
+                    </div>
+                    <div id="t-twitter" class="same-line">
+                        <a href="https://www.twitter.com/"><img src="twittericon.png" alt="twitter"></a>
+                    </div>
+                    <div id="i-instagram" class="same-line">
+                        <a href="https://www.instagram.com/"><img src="instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+                <div id="back-to-top" class="container">
+                    <a href="#myTopnav"><img src="toparrow.png" class="top-arrow" alt="back-to-top button" width="50px" height="50px"></a>
+                </div>
+            </div>
+        </footer>
+     </body>
+ </html>
