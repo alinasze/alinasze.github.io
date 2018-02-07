@@ -1,0 +1,796 @@
+            h1 {
+                color: black;
+                font-size: 50px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:20px;
+                font-family:"Helvetica";
+            }
+            body{
+                margin: 0px;
+            }
+            #banner {
+                display:block;
+                margin:auto;
+                padding-top:25px;
+                height:60%;
+            }
+            .topnav{
+                background-color:#ffffff;
+                overflow: hidden;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align:center;
+            }
+            .topnav a{
+                color:#000000;
+                text-align: center;
+                padding:5px 5px 5px 5px;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: "Helvetica";
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #Description {
+                margin-left: 65px;
+                margin-right: 65px;
+                text-align: center;
+            }
+            #PricingPic img {
+                margin-left:100px;
+                float:left;
+                padding-right:40px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:30px;
+            }
+            .highlight {
+                background-color:#D3D3D3;
+                color: black;
+                font-style: italic;
+            }
+            hr{
+                margin-top:-15px;
+                margin-right: 50px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+            }
+            #footer-contact {
+                text-align:center;
+            }
+            .Index-portfolio-wrapper {
+                text-align: center;
+            }
+            .portfolio-item {
+                display: inline-block;
+                position: relative;
+            }
+            .portfolio-item img{
+                width: 50vw;
+                transition: .5s ease-in-out;
+            }
+            .portfolio-item:hover img{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            .portfolio-item:hover .text {
+                opacity: 1;
+                cursor: pointer;
+            }
+            .text {
+                opacity: 0;
+                position: absolute;
+                width: 35%;
+                height: 10%;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                font-family: "Helvetica";
+                font-size: 15px;
+                padding: 10px 10px 10px 10px;
+                color: white;
+                display: inline-table;
+                /*using display inline-table here to center the contents in the div itself */
+                background-color: rgba(255, 255, 255, 0.8);
+                font-weight: bolder;
+                letter-spacing: .2em;
+                text-decoration: none;
+                color: black;
+            }
+            .portfolio-item .caption {
+                display: none;
+            }
+            .lightbox {
+                position: fixed;
+                top: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                padding-top: 40px;
+            }
+            .lightbox img {
+                padding-top: 10px;
+                width: 55vw;
+            }
+            .lightbox-image .caption{
+                color: white;
+            }
+            .lightbox-controls {
+                width: 90%;
+                margin: auto;
+            }
+            .prev-btn {
+                border: 2px solid white;
+                color: white;
+                text-decoration: none;
+                letter-spacing: .1em;
+                padding: 5px;
+                font-family: "Helvetica";
+            }
+            .prev-btn:hover {
+                background-color: rgba(255, 255, 255, 0.9);
+                font-weight: bolder;
+                border: none;
+                color: black;
+            }
+            .next-btn {
+                border: 2px solid white;
+                color: white;
+                text-decoration: none;
+                letter-spacing: .1em;
+                padding: 5px;
+                font-family: "Helvetica";
+            }
+            .next-btn:hover {
+                background-color: rgba(255, 255, 255, 0.9);
+                font-weight: bolder;
+                border: none;
+                color: black;
+            }
+            .close-btn {
+                color: white;
+                text-decoration: none;
+                float: right;
+                font-family: "Helvetica";
+            }
+            .close-btn:hover {
+                font-weight: bolder;
+            }
+            .hidden {
+                display: none;
+            }
+            #socialmedia {
+                text-align:center !important;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:40px;
+                height:40px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:45px;
+                height:40px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:40px;
+                height:40px;
+            }
+            #back-to-top {
+                text-align:center;
+                margin-top:20px;
+            }
+            .same-line {
+                display:inline-block;
+            }
+            .container{
+                display:block;
+            }
+            .top-arrow {
+                animation-name: beatArrow;
+                animation: beatArrow .5s infinite;
+                animation-direction: alternate;
+            }
+            @keyframes beatArrow {
+                from {
+                    transform:scale(1);
+                }
+                to {
+                    transform: scale(1.2);
+                }
+            }
+            .same-line {
+                display:inline-block;
+            }
+        @media screen and (min-width: 1120px) and (max-width: 1600px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 25px;
+                margin-right: 25px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:40px;
+                float:left;
+                display:inline-block;
+                margin-left:50px;
+                width:35%;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:20px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:10px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:450px;
+                height:300px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 900px) and (max-width: 1120px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 25px;
+                margin-right: 25px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:10px;
+                float:left;
+                display:inline-block;
+                margin-left:50px;
+                width:45%;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:20px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:0px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:360px;
+                height:250px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 780px) and (max-width: 900px) {
+            h1 {
+                text-align:center !important;
+                font-size:55px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:left;
+            }
+            p{
+                color:black;
+                font-size:18px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:80%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                padding-right:10px;
+                float:left;
+                display:inline-block;
+                margin-left:0px;
+                width:400px;
+                height:500px;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                text-align:left;
+                padding-top:0px;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:250px;
+                height:150px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:35px;
+                height:30px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:30px;
+                height:30px;
+            }
+        }
+        @media screen and (min-width: 480px) and (max-width: 780px) {
+            h1 {
+                text-align:center !important;
+                font-size:45px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:15px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:430px;
+                height:350px;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                text-align:center;
+                display:block;
+                margin: 0 auto;
+                padding-right:0px;
+                float:none;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:30px;
+                margin-left:30px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:155px;
+                height:110px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+                        #fa-facebook img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:25px;
+                height:20px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            h1 {
+                text-align:center !important;
+                font-size:40px;
+            }
+            h2 {
+                color: black;
+                font-size: 30px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 25px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:15px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:90%;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                width:80%;
+                height:80%;
+                margin: 0 auto;
+                text-align:center;
+                padding-right:0px;
+                float:none;
+                display:block;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:100px;
+                height:80px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #socialmedia {
+                text-align:center;
+            }
+                        #fa-facebook img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:25px;
+                height:20px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:20px;
+                height:20px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            h1 {
+                text-align:center !important;
+                font-size:35px;
+            }
+            h2 {
+                color: black;
+                font-size: 25px;
+                font-family:"Pinyon Script",cursive;
+                text-align:center;
+            }
+            h3 {
+                color: black;
+                font-size: 18px;
+                font-family:"PT Serif",serif,"Times New Roman";
+                text-align:center;
+            }
+            p{
+                color:black;
+                font-size:10px;
+                font-family:"Helvetica";
+            }
+            #Description {
+                margin-left: 5px;
+                margin-right: 5px;
+                text-align: center;
+            }
+            #banner {
+                padding-top:10px;
+                width:300px;
+                height:150px;
+                margin-right:10px;
+                display: block;
+                margin: 0 auto;
+            }
+            .topnav{
+                background-color:#ffffff;
+            }
+            .topnav a{
+                color:#000000;
+                font-size: 15px;
+                font-family: "Helvetica";
+                right:50px;
+                display:inline-block;
+                margin: 0 auto;
+            }
+            .topnav a:hover {
+                background-color:#808080;
+                color: white;
+            }
+            #PricingPic img {
+                width:320px;
+                height:300px;
+                margin-left:0px;
+                display: block;
+                margin: 0 auto;
+            }
+            hr{
+                margin-top:-15px;
+                text-align:center;
+                margin-right:0px;
+            }
+            #PriceList {
+                padding-top: 10px;
+                padding-bottom:0px;
+                text-align:center;
+            }
+            .Index-portfolio-items img{
+                display: inline-block;
+                width:100px;
+                height:80px;
+            }
+            #HeaderforGallery {
+                text-align:center;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            #fa-facebook img{
+                display:inline-block;
+                width:15px;
+                height:15px;
+            }
+            #t-twitter img{
+                display:inline-block;
+                width:20px;
+                height:15px;
+            }
+            #i-instagram img{
+                display:inline-block;
+                width:15px;
+                height:15px;
+            }
+        }
